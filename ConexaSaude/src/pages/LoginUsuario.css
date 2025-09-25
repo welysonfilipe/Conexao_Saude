@@ -9,7 +9,7 @@
 /* Lado esquerdo */
 .left-side {
   flex: 1; /* ocupa metade */
-  background-color: #3A5F6F;
+  background: linear-gradient(135deg, #3A5F6F, #2d4a57);
   color: white;
   display: flex;
   flex-direction: column;
@@ -19,18 +19,20 @@
 }
 
 .left-side .logo {
-  width: 64px; /* ajuste do logo */
+  width: auto; 
+  height: auto;/* ajuste do logo */
   margin-bottom: 20px;
 }
 
 .left-side h1 {
   font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .left-side p {
   font-size: 14px;
-  max-width: 300px;
+  max-width: 0 auto;
 }
 
 /* Lado direito */
@@ -45,30 +47,53 @@
 .right-side h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #3A5F6F;
 }
 
-.right-side p {
-  font-size: 14px;
+.paragraph {
+  font-size: 12.5px;
   margin-bottom: 20px;
   color: #979090;
 }
 
+.right-side label {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+}
+
 .right-side input {
-  width: 60%;
-  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 20px;
   margin: 8px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #3A5F6F;
   border-radius: 4px;
 }
 
 .right-side button {
-  width: 75%;
-  padding: 10px;
-  margin-top: 15px;
+  width: 45%;
+  padding: 8px 20px;
+  margin-top: 45px;
   background-color: #3A5F6F;
   color: white;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-link {
+  width: 45%;
+  text-decoration: none !important;
+  color: #3A5F6F;
+  background-color: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: 1px solid #3A5F6F;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
   cursor: pointer;
 }
 
