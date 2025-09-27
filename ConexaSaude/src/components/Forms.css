@@ -1,0 +1,37 @@
+
+.forms-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.forms-input label {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.forms-input input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #3A5F6F;
+    border-radius: 4px;;
+    font-size: 14px;
+    background-color: #FFF;
+}
+
+.forms-input .button-senha {
+  display: block;
+  text-align: right;
+  font-size: 11px;
+  color: #3A5F6F;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  width: 100%;
+  max-width: 350px;
+}

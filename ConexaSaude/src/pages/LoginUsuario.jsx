@@ -1,6 +1,9 @@
 import "./LoginUsuario.css";
+import Forms from "../components/Forms"
 
 import Logo from "../assets/saude_branco.png";
+import LogoIcon from "../assets/saude.png";
+import Button from "../components/Button";
 
 const login = () => {
 
@@ -15,18 +18,21 @@ const login = () => {
 
         {/* Lado direito */}
         <div className="right-side">
-          <h2>Conexão Saúde</h2>
+          <div className="LogoIcon"><img src={LogoIcon} alt="Icon da logo" />
+          <h2 className="Logo-Text">Conexão <span className="Logo-Text-2">Saúde</span></h2>
+          </div>
+          <div className="form-area">
           <p className="paragraph">Utilize o seu e-mail e senha cadastrada para efetuar login</p>
-          <label>
-            <input type="e-mail" placeholder="Digite o seu e-mail" />
-          </label>
-          <label>
-            <input type="password" placeholder="Digite a sua senha" />
-          </label>
-          <button>Acessar Conta</button>
-          <a href="#" className="button-link">Criar Conta</a>
+          <Forms />
+          <Button />
+          </div>
+
+          {/* Rodapé */}
+          <div className="rodape">
+            <a href="#" className="button-help">Precisa de ajuda?</a>
+            <p className="paragraph-2">2025 Conexão Sáude - Todos os direitos reservados</p>
+          </div>
         </div>
-      
     </div>
   )
 }
