@@ -1,11 +1,14 @@
+import { useState } from "react";
 import "./LoginUsuario.css";
 import Forms from "../components/Forms"
+
 
 import Logo from "../assets/saude_branco.png";
 import LogoIcon from "../assets/saude.png";
 import Button from "../components/Button";
 
 const login = () => {
+  const [mode, setMode] = useState("login")
 
   return (
     <div className="container">
@@ -21,10 +24,33 @@ const login = () => {
           <div className="LogoIcon"><img src={LogoIcon} alt="Icon da logo" />
           <h2 className="Logo-Text">Conexão <span className="Logo-Text-2">Saúde</span></h2>
           </div>
+          
           <div className="form-area">
-          <p className="paragraph">Utilize o seu e-mail e senha cadastrada para efetuar login</p>
-          <Forms />
-          <Button />
+          <p className="paragraph">{mode === "login" ? "Utilize o seu e-mail e senha cadastrada para efetuar login": "Preencha os campos abaixo para criar sua conta"}</p>
+
+          <Forms mode={mode} />
+
+          <Button text={mode === "login" ? "Acessar Conta" : "Criar Conta"} 
+            type="submit"
+          />
+          {/* Link alternar entre login/cadastro */}
+          {mode === "login" ? (
+            <a
+              href="#"
+              className="button-link"
+              onClick={() => setMode("register")}
+            >
+              Criar Conta
+            </a>
+          ) : (
+            <a
+              href="#"
+              className="button-link"
+              onClick={() => setMode("login")}
+            >
+              Efetuar Login
+            </a>
+          )}
           </div>
 
           {/* Rodapé */}

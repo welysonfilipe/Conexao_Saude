@@ -25,26 +25,6 @@
   text-align: center;
 }
 
-.container-button .button-link {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  text-decoration: none;
-  color: #3A5F6F;
-  background-color: transparent;
-  padding: 12px;
-  border-radius: 4px;
-  border: 1px solid #3A5F6F;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
 .container-button .button-login:hover {
-  opacity: 0.9;
-}
-
-.container-button .button-link:hover {
   opacity: 0.9;
 }

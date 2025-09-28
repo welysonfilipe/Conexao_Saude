@@ -1,10 +1,11 @@
 import "./Button.css"
 
-const Button = () => {
+const Button = ({text, onClick, type = "button"}) => {
   return (
     <div className="container-button">
-      <a href="#" className="button-login">Acessar Conta</a>
-      <a href="#" className="button-link">Criar Conta</a>
+      <button className="button-login" type={type} onClick={onClick}>
+        {text}
+      </button>
     </div>
   )
 }

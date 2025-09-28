@@ -1,17 +1,43 @@
 
 import "./Forms.css"
 
-const Forms = () => {
+const Forms = ({mode}) => {
   return (
         
         <div className='forms-input'>
-          <label>
+          {/* Campos para login */}
+          {mode === "login" ? (
+
+            <>
+            <label>
+              <input type="e-mail" placeholder="Digite o seu e-mail" />
+            </label>
+            <label>
+              <input type="password" placeholder="Digite a sua senha" />
+            </label>
+            <a href="#" className="button-senha">Esqueceu a senha?</a>
+            </>
+          ):(
+
+            // Campos APENAS para Cadastro
+            <>
+              <label>
+                <input type="text" placeholder="Digite seu nome completo"/>
+              </label>
+              <label>
                 <input type="e-mail" placeholder="Digite o seu e-mail" />
+              </label>
+              <label>
+                <input type="tel" placeholder="Digite um número para contato" />
               </label>
               <label>
                 <input type="password" placeholder="Digite a sua senha" />
               </label>
-              <a href="#" className="button-senha">Esqueceu a senha?</a>
+              <label>
+                <input type="password" placeholder="Confirme a sua senha" />
+              </label>
+            </>
+          )}
         </div>
 
     )
