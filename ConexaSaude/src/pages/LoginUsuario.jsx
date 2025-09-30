@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./LoginUsuario.css";
 import Forms from "../components/Forms"
+import { useNavigate } from 'react-router-dom'
 
 
 import Logo from "../assets/saude_branco.png";
@@ -8,7 +9,19 @@ import LogoIcon from "../assets/saude.png";
 import Button from "../components/Button";
 
 const login = () => {
+  const navigate = useNavigate()
   const [mode, setMode] = useState("login")
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (mode === "login") {
+      navigate('/home')
+
+    } else {
+      navigate('/cadastro')
+    }
+  }
 
   return (
     <div className="container">
@@ -32,13 +45,14 @@ const login = () => {
 
           <Button text={mode === "login" ? "Acessar Conta" : "Criar Conta"} 
             type="submit"
+            onClick={handleSubmit}
           />
           {/* Link alternar entre login/cadastro */}
           {mode === "login" ? (
             <a
               href="#"
               className="button-link"
-              onClick={() => setMode("register")}
+              onClick={(e) => { e.preventDefault(); setMode('register')}}
             >
               Criar Conta
             </a>
@@ -46,7 +60,7 @@ const login = () => {
             <a
               href="#"
               className="button-link"
-              onClick={() => setMode("login")}
+              onClick={(e) => { e.preventDefault(); setMode("login")}}
             >
               Efetuar Login
             </a>
