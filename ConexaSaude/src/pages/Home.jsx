@@ -1,9 +1,11 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
-      <h1>Tela Home Paciente</h1>
+      <NavBar />
     </div>
   )
 }

@@ -1,0 +1,30 @@
+
+.navbar-page {
+  display: flex;
+  justify-content: flex-end; /* Alinha no lado direito */
+  align-items: center;
+  gap: 30px; /* Espaçamento entre os links */
+  padding: 4px 40px;
+  background-color: #3A5F6F;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-page a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 8px 16px;
+}
+
+.navbar-page a:hover {
+  color: #777777;
+  text-decoration: underline;
+}
+
+/* Link ativo (opcional) */
+.navbar-page a.active {
+  color: #2d4a57;
+  font-weight: bold;
+}
