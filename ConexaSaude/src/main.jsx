@@ -11,7 +11,12 @@ import {
 
 import LoginUsuario from "./pages/LoginUsuario"
 import Cadastro from "./pages/Cadastro"
-import Home from './pages/Home';
+import Home from "./pages/Home"
+import Agenda from './pages/Agenda';
+import HistoricoConsultas from './pages/HistoricoConsultas';
+import HistoricoTratamentos from './pages/HistoricoTratamentos';
+import Resultados from './pages/Resultados';
+import Teleconsulta from './pages/Teleconsulta';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +30,26 @@ const router = createBrowserRouter([
   {
     path: "/home",  
     element: <Home />
+  },
+  {
+    path: "/agenda",  
+    element: <Agenda />
+  },
+  {
+    path: "/historico-consultas",  
+    element: <HistoricoConsultas />
+  },
+  {
+    path: "/historico-tratamentos",  
+    element: <HistoricoTratamentos />
+  },
+  {
+    path: "/resultados",  
+    element: <Resultados />
+  },
+  {
+    path: "/teleconsulta",  
+    element: <Teleconsulta />
   }
 ])
 

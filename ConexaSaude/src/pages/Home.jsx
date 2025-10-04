@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import NavBar from "../components/NavBar";
 import Button from "../components/Button";
+import Sidebar from "../components/Sidebar";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,20 +16,17 @@ const Home = () => {
       <div className="home-content">
         {/* Sidebar */}
         <aside className="sidebar">
-          <button className="sidebar-item active">Agenda</button>
-          <button className="sidebar-item">Resultado de Exames</button>
-          <button className="sidebar-item">Histórico de Consultas</button>
-          <button className="sidebar-item">Histórico de Tratamentos</button>
-          <button className="sidebar-item">Solicitar Atestado e Declaração</button>
+         <Sidebar />
         </aside>
 
         {/* Conteúdo Principal */}
         <main className="main-content">
           <div className="header-section">
             <h1>Paciente</h1>
-            <Button 
+            <Button
               text="Editar" 
               onClick={() => setIsEditing(!isEditing)}
+              className="button-edit"
             />
           </div>
 
