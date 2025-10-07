@@ -1,0 +1,52 @@
+
+.table-component {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: monospace;
+}
+
+.table-header {
+  display: grid;
+  background-color: #3A5F6F;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+.header-cell {
+  padding: 0 10px;
+}
+
+.table-row {
+  display: grid;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: start;
+}
+
+.tabela-row:last-child {
+  border-bottom: none;
+}
+
+.tabela-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-cell {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .tabela-header,
+  .tabela-row {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+}
