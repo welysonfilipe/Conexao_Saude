@@ -1,10 +1,15 @@
 import NavBar from '../components/NavBar'
 import Sidebar from '../components/Sidebar'
+import Table from '../components/Table'
+import tratamentoData from "../data/tratamentoData.json"
 import "./HistoricoTratamentos.css"
 
 const HistoricoTratamentos = () => {
+
+  const tratamento = tratamentoData.tratamento;
+
   return (
-     <div className="home-container">
+    <div className="home-container">
       <NavBar />
       
       <div className="home-content">
@@ -13,11 +18,22 @@ const HistoricoTratamentos = () => {
          <Sidebar />
         </aside>
 
-       {/*Conteúdo Principal*/}
-       <main className='main-content'>
+      {/*Conteúdo Principal*/}
+      <main className='main-content'>
         <div className='header-section'>
-          <h1>Histórico de Tratamentos</h1>
+          <div>
+              <h1>Histórico de Tratamentos</h1>
+              <div className="info-section">
+                <h3><span>Paciente:</span> Welyson Filipe</h3>
+                <h3><span>Convênio:</span> Unimed</h3>
+              </div>
+          </div>
         </div>
+
+        <Table 
+        headers={["Data", "Diagnóstico", "Tratamento Utilizado"]}
+        data={tratamento}
+        columns="150px 200px 1fr"/>
        </main>
 
       </div>

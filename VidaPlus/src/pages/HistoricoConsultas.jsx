@@ -18,19 +18,15 @@ const HistoricoConsultas = () => {
          <Sidebar />
         </aside>
 
-       {/*Conteúdo Principal*/}
-       <main className='main-content'>
+      {/*Conteúdo Principal*/}
+      <main className='main-content'>
         <div className='header-section'>
-          <h1>Histórico de Consultas</h1>
-          <div className="info-section">
-            <div className="info-field">
-              <label>Nome:</label>
-              <input type="text" placeholder="" />
-            </div>
-            <div className="info-field">
-              <label>Convênio:</label>
-              <input type="text" placeholder="" />
-            </div>
+          <div>
+              <h1>Histórico de Consultas</h1>
+              <div className="info-section">
+                <h3><span>Paciente:</span> Welyson Filipe</h3>
+                <h3><span>Convênio:</span> Unimed</h3>
+              </div>
           </div>
         </div>
 

@@ -1,0 +1,22 @@
+{
+    "tratamento" : [
+        {
+      "id": 1,
+      "data": "13/06/2025",
+      "Diagnóstico": "Gastroenterite",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada."
+    },
+    {
+      "id": 2,
+      "data": "22/08/2025",
+      "especialista": "Herpes",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada."
+    },
+    {
+      "id": 3,
+      "data": "12/09/2025",
+      "especialista": "Obesidade Grau I",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada."
+    }
+  ]
+}

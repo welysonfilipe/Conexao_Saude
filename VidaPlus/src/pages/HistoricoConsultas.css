@@ -16,17 +16,30 @@
 }
 
 .header-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .header-section h1 {
   font-size: 32px;
   color: #3A5F6F;
-  margin: 0;
-  flex: 0; /*Não aumenta*/
-  white-space: nowrap; /*Evita que ocorra uma quebra de linha na h1*/
+  margin: 0 0 15px 0; /* Espaço abaixo do h1 */
+  white-space: nowrap;
+}
+
+.info-section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.info-section h3 {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.info-section span {
+  color: #3A5F6F;
+  font-weight: bold;
 }
