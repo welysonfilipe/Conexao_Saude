@@ -12,7 +12,7 @@ const NavBar = () => {
 
         <div className="navbar-link">
           <Link onClick={() => navigate('/home')}>Home</Link>
-          <Link>Contato</Link>
+          <Link onClick={() => navigate('/contato')}>Contato</Link>
           <Link onClick={() => navigate('/')}>Sair</Link>
         </div>
     </nav> 

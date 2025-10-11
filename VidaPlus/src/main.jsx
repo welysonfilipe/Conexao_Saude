@@ -17,6 +17,7 @@ import HistoricoConsultas from './pages/HistoricoConsultas';
 import HistoricoTratamentos from './pages/HistoricoTratamentos';
 import Resultados from './pages/Resultados';
 import Teleconsulta from './pages/Teleconsulta';
+import Contato from './pages/Contato';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/teleconsulta",  
     element: <Teleconsulta />
+  },
+  {
+    path: "/contato",  
+    element: <Contato />
   }
 ])
 

@@ -44,13 +44,6 @@ const Cadastro = () => {
   };
 
   const handleSalvar = () => {
-    // Validação básica
-    if (!formData.nomeCompleto || !formData.cpf || !formData.email) {
-      alert("Por favor, preencha os campos obrigatórios!");
-      return;
-    }
-
-    // Aqui você salvaria os dados
     console.log("Dados do paciente:", formData);
     alert("Cadastro realizado com sucesso!");
     navigate('/home');

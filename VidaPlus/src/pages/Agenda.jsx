@@ -31,13 +31,8 @@ const Agenda = () => {
   };
 
   const handleAgendarConsulta = () => {
-    if (!formData.horario || !formData.especialidade || !formData.medico) {
-      alert("Por favor, preencha todos os campos!");
-      return;
-    }
-
     const newEvent = {
-      title: `${formData.especialidade} - ${formData.medico}`,
+      title: `${formData.especialidade || "Consulta"} - ${formData.medico || "Médico"}`,
       start: selectedDate,
       end: selectedDate,
       allDay: false
