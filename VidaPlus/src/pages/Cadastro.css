@@ -1,0 +1,48 @@
+.cadastro-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.cadastro-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.cadastro-content h1 {
+  font-size: 32px;
+  color: #3A5F6F;
+  margin: 0 0 40px 0;
+}
+
+.button-section-cadastro {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.button-section-cadastro .container-button {
+  width: auto;
+  max-width: none;
+}
+
+.button-salvar {
+  padding: 12px 40px;
+  font-size: 15px;
+  width: auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .cadastro-content {
+    padding: 20px;
+  }
+  
+  .cadastro-content h1 {
+    font-size: 26px;
+  }
+  
+  .button-section-cadastro {
+    justify-content: center;
+  }
+}

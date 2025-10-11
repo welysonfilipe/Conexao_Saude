@@ -1,0 +1,59 @@
+{
+  "especialidades": [
+    {
+      "id": 1,
+      "nome": "Cardiologia",
+      "medicos": ["Dr. João Silva", "Dra. Maria Santos"]
+    },
+    {
+      "id": 2,
+      "nome": "Dermatologia",
+      "medicos": ["Dr. Pedro Costa", "Dra. Ana Lima"]
+    },
+    {
+      "id": 3,
+      "nome": "Endocrinologia",
+      "medicos": ["Dra. Carla Souza", "Dr. Roberto Dias"]
+    },
+    {
+      "id": 4,
+      "nome": "Gastroenterologia",
+      "medicos": ["Dr. Lucas Oliveira", "Dra. Paula Rocha"]
+    },
+    {
+      "id": 5,
+      "nome": "Ginecologia",
+      "medicos": ["Dra. Fernanda Alves", "Dra. Juliana Pires"]
+    },
+    {
+      "id": 6,
+      "nome": "Neurologia",
+      "medicos": ["Dr. Carlos Mendes", "Dra. Beatriz Campos"]
+    },
+    {
+      "id": 7,
+      "nome": "Nutricionista",
+      "medicos": ["Dra. Mariana Costa", "Dra. Rafaela Torres"]
+    },
+    {
+      "id": 8,
+      "nome": "Ortopedia",
+      "medicos": ["Dr. Ricardo Martins", "Dr. Tiago Ferreira"]
+    },
+    {
+      "id": 9,
+      "nome": "Pediatria",
+      "medicos": ["Dra. Letícia Gomes", "Dr. André Barbosa"]
+    },
+    {
+      "id": 10,
+      "nome": "Psiquiatria",
+      "medicos": ["Dr. Felipe Ramos", "Dra. Camila Nunes"]
+    },
+    {
+      "id": 11,
+      "nome": "Urologia",
+      "medicos": ["Dr. Bruno Carvalho", "Dr. Gustavo Pereira"]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+.form-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #3A5F6F;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+/* Campos que ocupam mais espaço */
+.field-full {
+  grid-column: span 4;
+}
+
+.field-large {
+  grid-column: span 2;
+}
+
+.field-medium {
+  grid-column: span 1;
+}
+
+.field-small {
+  grid-column: span 1;
+  max-width: 150px; /* Limita largura do checkbox */
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1200px) {
+  .section-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .field-full {
+    grid-column: span 3;
+  }
+  
+  .field-large {
+    grid-column: span 2;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .section-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .field-full,
+  .field-large {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .field-full,
+  .field-large,
+  .field-medium {
+    grid-column: span 1;
+  }
+}

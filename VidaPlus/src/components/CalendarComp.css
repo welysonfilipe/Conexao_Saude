@@ -1,0 +1,65 @@
+.calendar-wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Customização do React Big Calendar */
+.rbc-calendar {
+  font-family: monospace;
+}
+
+.rbc-toolbar {
+  margin-bottom: 15px;
+}
+
+.rbc-toolbar button {
+  background-color: #3A5F6F;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 2px;
+  transition: background-color 0.2s;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #2d4a57;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #2d4a57;
+  font-weight: bold;
+}
+
+.rbc-event {
+  background-color: #3A5F6F;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.rbc-today {
+  background-color: #e8f4f8;
+}
+
+.rbc-header {
+  padding: 10px 3px;
+  font-weight: bold;
+  border-bottom: 2px solid #3A5F6F;
+}
+
+.rbc-date-cell {
+  padding: 5px;
+}
+
+.rbc-off-range-bg {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    padding: 10px;
+  }
+}

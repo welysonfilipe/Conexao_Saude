@@ -1,0 +1,53 @@
+.form-field-comp {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.field-input {
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: #3A5F6F;
+}
+
+.field-input::placeholder {
+  color: #999;
+}
+
+/* CHECKBOX */
+.checkbox-options {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.checkbox-option input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
