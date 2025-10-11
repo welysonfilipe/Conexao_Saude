@@ -35,7 +35,7 @@ const login = () => {
         {/* Lado direito */}
         <div className="right-side">
           <div className="LogoIcon"><img src={LogoIcon} alt="Icon da logo" />
-          <h2 className="Logo-Text">Conexão <span className="Logo-Text-2">Saúde</span></h2>
+          <h2 className="Logo-Text">Vida <span className="Logo-Text-2">Plus</span></h2>
           </div>
           
           <div className="form-area">

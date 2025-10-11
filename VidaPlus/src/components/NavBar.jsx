@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
 
     <nav className='navbar-page'>
-        <h2 className='title-page'>Conexão Saúde</h2>
+        <h2 className='title-page'>Vida Plus</h2>
 
         <div className="navbar-link">
           <Link onClick={() => navigate('/home')}>Home</Link>
